@@ -1,13 +1,14 @@
-const express = require("express");
 const mongojs = require("mongojs");
 const mongoose = require("mongoose");
 const logger = require("morgan");
 const path = require("path");
 
-const User = require("./userModel.js");
+const db = require("./models");
 const app = express();
 
 app.use(logger("dev"));
+
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
