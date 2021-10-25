@@ -1,29 +1,39 @@
 const mongoose = require("mongoose");
-// const { Model, DataTypes } = require('sequelize');
-// const sequelize = require('../config/connection');
 
 const Schema = mongoose.Schema;
 
 const WorkoutSchema = new Schema({
-  id: {
-    type: DataType.Integer,
-    allowNull: false,
-    primaryKey: true,
-    autoIncrement: true,
+  date: {
+    type: Date,
+    default: Date.now
   },
-  workout_type: {
-    type: String,
-    trim: true,
-    required: "Select exercise type",
-    choices: ["Resistance", "Cardio"]
+  activities: [{
+    type: {
+      type: String,
+      trim: true,
+    },
+    name: {
+      type: String,
+      trim: true,
+    },
+    duration: Number,
+    weight: {
+      type: Number,
+      default: 0
+    },
+    reps: {
+      type: Number,
+      default: 0
+    },
+    sets: {
+      type: Number,
+      default: 0
+    }
+  }],
+  totalDuration: {
+    type: Number,
+    default: 0
   }
-  // },
-  //   {
-  //     sequelize,
-  //     timestamp: true,
-  //     freezeTableName: true,
-  //     underscored: true,
-  //     modelName: "workout"
 });
 
 const Workout = mongoose.model("Workout", WorkoutSchema);
