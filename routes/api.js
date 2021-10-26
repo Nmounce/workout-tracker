@@ -10,7 +10,7 @@ router.get("/api/workouts", (req, res) => {
     db.Workout.find({}).then(dbWorkout => {
         dbWorkout.forEach(workout => {
             const total = 0;
-            workout.activities.forEach(a => {
+            workout.exercise.forEach(a => {
                 total += a.duration;
             });
             workout.totalDuration = total;
