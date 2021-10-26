@@ -17,12 +17,12 @@ mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/workout", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        useCreatedIndexes: true,
-        useFindAndModify: false,
+        useCreateIndex: true,
+        useFindAndModify: false
     });
 
-app.use(require("./routes/api.js"));
-app.use(require("./routes/html.js"));
+app.use(require("./routes/api_route"));
+app.use(require("./routes/html_route"));
 
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}`);
