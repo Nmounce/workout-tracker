@@ -1,4 +1,5 @@
 # workout-tracker
+
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ## Description
@@ -10,7 +11,7 @@ the name and type of an exercise, as well as any corresponding information such
 as duration, number of reps, weight, number of sets, and distance, for cardio
 exercises. The app dashboard automatically displays weekly summary graphs of all
 workouts completed within specified time periods. This application was built from starter code using MongoDB and
-Mongoose. 
+Mongoose.
 ![](/public/images/graph.png)
 
 ## Table of Contents
@@ -44,16 +45,17 @@ Express, HTML, JavaScript, Mongo, Mongoose
 ## Usage
 
 1. Homepage displaying most recent workout:
-  ![](/public/images/homepage.png)
+   ![](/public/images/homepage.png)
 2. Create a new workout:
-  ![](/public/images/new_workout.gif)
+   ![](/public/images/new_workout.gif)
 3. View summary from previous week:
-  ![](/public/images/graph.png)
+   ![](/public/images/graph.png)
 4. Add an exercise to the array:
-  ![](/public/images/snippet.png)
+   ![](/public/images/snippet.png)
    This function will add an exercise to the array of exercises that belong to
    the workout within the given ID, updates the fields, and push the exercise to
-   the array of exercises. 
+   the array of exercises.
+
 ## Licensing
 
 [Unlicense] This is free and unencumbered software released into the public domain.Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non - commercial, and by any means. In jurisdictions that recognize copyright laws, the author or authors of this software dedicate any and all copyright interest in the software to the public domain.We make this dedication for the benefit of the public at large and to the detriment of our heirs and successors. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this software under copyright law. THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. For more information, please refer to 'http://unlicense.org/'."
@@ -77,9 +79,9 @@ TA's of the UC Davis Coding Bootcamp
 https://github.com/annasuvvac/homework-17
 https://github.com/kqarlos/fitness-tracker
 https://github.com/GauriKhandke/fitness-tracker
+
 ## Questions
 
 My name is Nikki Mounce
 Reach me with additional questions: nikkicancode@gmail.com
 Check out my GitHub: github.com/Nmounce
-
