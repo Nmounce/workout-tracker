@@ -52,3 +52,16 @@ router.put("/api/workouts/:id", (req, res) => {
         res.json(err);
     });
 });
+
+//get workout data in specific date range
+router.get("/api/workouts/data", (req, res) => {
+    db.Workout.find({}).then(dbWorkout => {
+        console.log("All Workouts");
+        console.log(dbWorkout);
+        res.json(dbWorkout);
+    }).catch(err => {
+        res.json(err);
+    });
+});
+
+module.exports = router;
