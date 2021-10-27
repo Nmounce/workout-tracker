@@ -1,4 +1,4 @@
-# workout-tracker
+# Workout Tracker
 
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
@@ -12,7 +12,6 @@ as duration, number of reps, weight, number of sets, and distance, for cardio
 exercises. The app dashboard automatically displays weekly summary graphs of all
 workouts completed within specified time periods. This application was built from starter code using MongoDB and
 Mongoose.
-![](/public/images/graph.png)
 
 ## Table of Contents
 
